@@ -37,7 +37,8 @@
 		}
 	},
 	{
-		"type": "COMESTIBLE",
+		"type": "ITEM",
+    	"subtypes": [ "COMESTIBLE" ],
 		"id": "flame_ofuda",
 		"category": "weapons",
 		"comestible_type": "MED",
@@ -55,7 +56,8 @@
 		"flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
 	},
 	{
-		"type": "COMESTIBLE",
+		"type": "ITEM",
+    	"subtypes": [ "COMESTIBLE" ],
 		"id": "flame_ofuda_d",
 		"category": "weapons",
 		"comestible_type": "MED",
@@ -143,7 +145,8 @@
 	},
 	{
 		"id": "omamori_pouch",
-		"type": "ARMOR",
+		"type": "ITEM",
+    	"subtypes": [ "ARMOR" ],
 		"category": "armor",
 		"name": { "str_sp": "omamori amulet" },
 		"description": "A fine fabric pouch tied shut with a complicated knot. Meant to have a special talisman sealed inside.",
@@ -154,7 +157,8 @@
 		"symbol": "[",
 		"color": "light_green",
 		"material_thickness": 0.5,
-		"flags": [ "NO_WEAR_EFFECT", "ONLY_ONE", "OVERSIZE", "COLLAPSE_CONTENTS" ],
+		"max_worn": 1,
+		"flags": [ "NO_WEAR_EFFECT", "OVERSIZE", "COLLAPSE_CONTENTS" ],
 		"pocket_data": [
 		  {
 			"pocket_type": "CONTAINER",
@@ -171,7 +175,8 @@
 	},
 	{
 		"id": "omamori_flame",
-		"type": "ARMOR",
+		"type": "ITEM",
+    	"subtypes": [ "ARMOR" ],
 		"category": "armor",
 		"name": { "str_sp": "flame omamori" },
 		"description": "A talisman blessed and placed in a special pouch. This one is made to ward against flames",
@@ -195,7 +200,8 @@
 	},
 	{
 		"id": "omamori_water",
-		"type": "ARMOR",
+		"type": "ITEM",
+    	"subtypes": [ "ARMOR" ],
 		"category": "armor",
 		"name": { "str_sp": "water omamori" },
 		"description": "A talisman blessed and placed in a special pouch. This one is made to ward against the cold",
@@ -219,7 +225,8 @@
 	},
 	{
 		"id": "omamori_metal",
-		"type": "ARMOR",
+		"type": "ITEM",
+    	"subtypes": [ "ARMOR" ],
 		"category": "armor",
 		"name": { "str_sp": "metallic omamori" },
 		"description": "A talisman meant to be sealed within a special pouch. This one greatly protects against physical damage, though not for long.",

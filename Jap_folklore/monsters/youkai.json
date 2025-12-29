@@ -15,7 +15,6 @@
 		"regenerates": 0.2,
 		"path_settings": {
 			"max_dist": 15,
-			"bash_strength": 4,
 			"avoid_traps": true,
 			"avoid_sharp": true
 		},

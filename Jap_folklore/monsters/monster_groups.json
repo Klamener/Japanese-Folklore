@@ -1,7 +1,7 @@
 [
   {
 	"type": "monstergroup",
-	"name": "GROUP_WILDERNESS_FOREST_MAMMAL",
+	"id": "GROUP_WILDERNESS_FOREST_MAMMAL",
 	"default": "mon_null",
 	"is_animal": true,
 	"monsters": [
@@ -15,7 +15,7 @@
   },
   {
 	"type": "monstergroup",
-	"name": "GROUP_CAVE",
+	"id": "GROUP_CAVE",
 	"is_animal": true,
 	"monsters": [
 		{ "monster": "mon_nekomata", "weight": 75, "cost_multiplier": 20 } 
@@ -23,7 +23,7 @@
   },
   {
     "type": "monstergroup",
-	"name": "GROUP_MFOX",
+	"id": "GROUP_MFOX",
 	"//": "Group for summon foxes spell.",
     "default" : "mon_fox_red",
     "monsters" : [

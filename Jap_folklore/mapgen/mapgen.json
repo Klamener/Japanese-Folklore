@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "field_highway_youkai" ],
     "weight": 1000,
     "object": {
@@ -37,7 +36,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "ruined_kami_shrine" ],
     "weight": 250,
     "object": {
@@ -87,7 +85,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "ruined_kami_shrine_roof" ],
     "weight": 250,
     "object": {
@@ -123,7 +120,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "kami_shrine" ],
     "weight": 50,
     "object": {
@@ -171,7 +167,6 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "kami_shrine_roof" ],
     "weight": 50,
     "object": {

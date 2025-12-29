@@ -1,7 +1,8 @@
 [
   {
 	"id": "blank_mask",
-	"type": "ARMOR",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
 	"name": { "str": "wood mask" },
 	"description": "A plain carved wooden mask with cloth straps and padding. It still has a way to go before it's finished, but it can be left as-is for a minimalist design.",
 	"weight": "200 g",
@@ -18,7 +19,8 @@
   },
   {
 	"id": "blank_mask_xl",
-	"type": "ARMOR",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
 	"copy-from": "blank_mask",
 	"name": { "str": "XL wood mask" },
 	"description": "A plain carved wooden mask with cloth straps and padding. This mask can accommodate unusual anatomy, or be carved to portray such creatures.",

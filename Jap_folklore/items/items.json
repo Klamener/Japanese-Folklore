@@ -2,7 +2,8 @@
   {
 	"id": "mutagen_kitsune",
 	"copy-from": "mutagen_flavor",
-	"type": "COMESTIBLE",
+	"type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
 	"description": "A star pearl disolved into a mana potion. It may have a greater effect this way.",
 	"name": { "str": "kitsune mutagen" },
 	"looks_like": "mutagen",
@@ -15,7 +16,8 @@
   {
 	"id": "iv_mutagen_kitsune",
 	"copy-from": "iv_mutagen_flavor",
-	"type": "COMESTIBLE",
+	"type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
 	"name": { "str": "kitsune mutagenic primer" },
 	"description": "A very concentrated form of mana potion using star pearls as the primary ingredient.",
 	"looks_like": "iv_mutagen",
@@ -29,7 +31,8 @@
   },
   {
     "id": "star_pearl",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "star pearl" },
     "description": "A Pearl treasured by kitsune.",
     "price": "1000 USD",
@@ -49,7 +52,7 @@
   },
   {
 	  "id": "synth_star_pearl",
-	  "type": "GENERIC",
+	  "type": "ITEM",
 	  "name": { "str": "synthetic star pearl" },
 	  "description": "A reproduction of a pearl tresured by kitsune. It seems to be lacking in something, however.",
 	  "price": "10 USD",
@@ -63,8 +66,9 @@
   },
   {
     "id": "culti_star_pearl",
-    "type": "TOOL",
-	"copy-from": "star_pearl",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+	  "copy-from": "star_pearl",
     "name": { "str_sp": "cultivating star pearl" },
     "description": "A synthetic star pearl encased in an abundance of raw mana. Perhaps spending a long period of time in a mana rich environment can bring you closer to the real thing? Activate it when it's done to retrieve the results.",
     "use_action": {
@@ -79,7 +83,8 @@
   },
   {
     "id": "fox_book",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "Foxes do it Better", "str_pl": "copies of Foxes do it Better" },
 	"category": "manuals",
     "description": "A short, sometime humourous, treatice on why foxes are objectively the best. the author seems to get \"Objective\" and \"Subjective\" mixed up a lot.",
@@ -91,7 +96,8 @@
   },
   {
     "id": "ninja_scroll",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "esoteric scroll" },
     "description": "A strange scroll that takes a while to make sense of. Seems to contain information about weapons that a ninja might use. There's even a strange food recipe.",
     "weight": "435 g",
@@ -101,7 +107,8 @@
   },
   {
     "id": "ninja_scroll2",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "esoteric scroll" },
     "description": "A strange scroll that takes a while to make sense of. Seems to contain more advanced skills that a ninja might use. They seem particularly difficult to pull off, though.",
     "weight": "435 g",
@@ -111,7 +118,7 @@
     "use_action": { "type": "learn_spell", "spells": [ "ninpo_star", "ninpo_blind", "ninpo_smoke", "ninpo_stealth" ] }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "fox_plush",
     "symbol": "o",
     "color": "red",
@@ -124,7 +131,7 @@
     "flags": [ "SLEEP_AID" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "magic_fox_plush",
     "symbol": "o",
     "color": "red",
@@ -139,7 +146,8 @@
     "flags": [ "SLEEP_AID", "MAGIC_FOCUS" ]
   },
   {
-	"type": "COMESTIBLE",
+	"type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
     "id": "dry_divine_rice",
     "name": { "str_sp": "divine rice" },
     "weight": "66 g",
@@ -151,7 +159,7 @@
     "symbol": "%",
     "quench": -2,
     "calories": 240,
-	"healthy": 4,
+	  "healthy": 4,
     "description": "Dried rice of the highest quality. Food fit for the gods, though still virtually inedible when dry.",
     "price": "500 USD",
     "price_postapoc": "50 USD",
@@ -164,7 +172,8 @@
     "fun": -15
   },
   {
-	"type": "COMESTIBLE",
+	"type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
 	"id": "divine_rice_cooked",
 	"name": { "str_sp": "cooked divine rice" },
 	"comestible_type": "FOOD",
@@ -184,7 +193,8 @@
 	"vitamins": [ [ "iron", 11 ], [ "divinity", 100 ] ]
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "BREWABLE", "COMESTIBLE" ],
     "id": "brew_divine_sake",
     "looks_like": "brew_vodka",
     "name": { "str_sp": "divine sake mash" },
@@ -203,10 +213,12 @@
     "charges": 7,
     "phase": "liquid",
     "comestible_type": "DRINK",
-    "brewable": { "time": "7 days", "results": [ "divine_sake_unfiltered", "koji", "yeast" ] }
+    "brew_time": "7 days", 
+    "brew_results": [ "divine_sake_unfiltered", "koji", "yeast" ]
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "id": "divine_sake_unfiltered",
     "looks_like": "vodka",
     "name": { "str_sp": "divine nigori sake" },
@@ -236,7 +248,8 @@
     "freezing_point": -8
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "id": "divine_sake_filtered",
     "looks_like": "vodka",
     "name": { "str_sp": "divine sake" },
@@ -256,7 +269,7 @@
     "price": "22 USD",
     "price_postapoc": "15 USD",
     "material": [ "alcohol", "water" ],
-	"vitamins": [ [ "divinity", 5 ] ],
+	  "vitamins": [ [ "divinity", 5 ] ],
     "volume": "250 ml",
     "phase": "liquid",
     "charges": 7,
@@ -265,14 +278,15 @@
     "freezing_point": -8
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "id": "nekomata_tails",
     "symbol": "<",
     "color": "dark_gray",
     "name": { "str": "pair of nekomata tails", "str_pl": "pairs of nekomata tails" },
     "material": "flesh",
     "vitamins": [ [ "calcium", 6 ], [ "iron", 12 ] ],
-	"calories": 200,
+	  "calories": 200,
     "price": "20 USD",
     "healthy": 1,
     "weight": "300 g",
@@ -282,13 +296,14 @@
     "stim": 1,
     "addiction_potential": 3,
     "description": "A pair of feline tails, grown together in a otherworldly but charming manner.  Eating them could potentially mutate you into a more purr-fect form.",
-	"use_action": { 
+	  "use_action": { 
 		"type": "consume_drug",
 		"effects": [ { "id": "nekomata_tail_effect", "duration": 5 } ]
 	}
   },
   {
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "id": "wooden_kine",
     "name": "wooden kine",
     "description": "A large wooden mallet with elongated head, traditionally used to pound rice or millet. It can also smash heads in a pinch.",
@@ -299,12 +314,12 @@
     "flags": "NONCONDUCTIVE",
     "techniques": [ "WBLOCK_1", "BRUTAL", "WIDE", "SWEEP" ],
     "volume": "2500 ml",
-	"to_hit": -1,
+	  "to_hit": -1,
     "price": "12 USD",
     "qualities": [ [ "HAMMER", 1 ] ]
   },
   {
-	"type": "GENERIC",
+	"type": "ITEM",
 	"id": "magatama",
 	"name": { "str": "magatama", "str_pl": "magatama" },
 	"description": "A comma-shaped bead of finely carved jade.",
@@ -317,7 +332,7 @@
 	"price": "5 USD"
   },
   {
-	"type": "GENERIC",
+	"type": "ITEM",
 	"id": "magatama_string",
 	"name": { "str": "string of magatama", "str_pl": "strings of magatama" },
 	"description": "A short string of magatama beads",
@@ -330,7 +345,8 @@
 	"price": "50 USD"
   },
   {
-	"type": "ARMOR",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
 	"id": "magatama_necklace",
 	"name": { "str": "magatama necklace" },
 	"description": "A series of jade magatama beads have been linked together into a necklace.",
@@ -341,10 +357,10 @@
 	"symbol": "Q",
 	"material": "gemstone",
 	"price": "250 USD",
-	"flags": [ "FANCY", "NO_WEAR_EFFECT" ]
+	"flags": [ "NO_WEAR_EFFECT" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "shuriken",
     "category": "weapons",
     "price": "1 USD",
@@ -361,7 +377,7 @@
     "melee_damage": { "cut": 1 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "coin_shuriken",
     "category": "weapons",
     "price": "1 USD",
@@ -378,7 +394,7 @@
     "melee_damage": { "cut": 1 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "kunai",
     "category": "weapons",
     "price": "52 USD",
@@ -399,25 +415,26 @@
     "melee_damage": { "bash": 1, "stab": 10 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "rope_dart",
     "category": "weapons",
     "price": "52 USD",
     "price_postapoc": "5 USD",
     "name": { "str": "rope dart", "str_pl": "rope darts" },
-	"longest_side": "25 cm",
-	"symbol": "/",
-	"color": "brown",
-	"to_hit": { "grip": "none", "length": "long", "surface": "point", "balance": "uneven" },
+	  "longest_side": "25 cm",
+	  "symbol": "/",
+	  "color": "brown",
+	  "to_hit": { "grip": "none", "length": "long", "surface": "point", "balance": "uneven" },
     "description": "A kunai fastened to a length of rope. While difficult to use, it allows for attacks from a much safer distance without the noise of a gun or the bulk of a spear.",
     "material": [ "steel", "cotton" ],
     "volume": "460 ml",
     "weight": "716 g",
-	"flags": [ "REACH_ATTACK", "REACH3", "WHIP", "NONCONDUCTIVE" ],
+	  "flags": [ "REACH_ATTACK", "REACH3", "WHIP", "NONCONDUCTIVE" ],
     "melee_damage": { "bash": 1, "stab": 10 }
   },
   {
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
     "id": "blinding_egg",
     "category": "weapons",
 	"comestible_type": "MED",
@@ -435,7 +452,8 @@
 	"flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
-    "type": "TOOL",
+    "type": "ITEM",
+  "subtypes": [ "TOOL" ],
     "id": "mod_smokebomb",
     "category": "weapons",
 	"symbol": "o",
@@ -459,7 +477,8 @@
 	"flags": [ "BOMB", "GRENADE" ]
   },
   {
-    "type": "TOOL",
+    "type": "ITEM",
+  "subtypes": [ "TOOL" ],
     "id": "mod_smokebomb_lit",
     "category": "weapons",
 	"symbol": "o",
@@ -488,7 +507,8 @@
 	"flags": [ "DANGEROUS", "TRADER_AVOID" ]
   },
   {
-	"type": "COMESTIBLE",
+	"type": "ITEM",
+  "subtypes": [ "COMESTIBLE" ],
 	"id": "ninja_food",
 	"comestible_type": "FOOD",
 	"symbol": "o",
